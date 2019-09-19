@@ -1,0 +1,2 @@
+include ':app', ':mymoduletestcore', ':mymoduletest1'
+rootProject.name='SubModuleApp'

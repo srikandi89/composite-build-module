@@ -1,0 +1,9 @@
+Change gradle.properties.example to gradle.properties.
+
+To composite-build mymoduletestcore, here are the steps:
+1. Open gradle tab at right side android studio, mymoduletest1 > tasks > other > createFullJarRelease.
+2. Copy generated jar from mymoduletest1 > build > intermediates > full_jar > release > yourModuleName.jar into mymoduletestcore/libs
+3. From gradle section, go to mymoduletestcore > tasks > build
+4. Double click clean
+5. Double click build
+6. Go to publishing section and then double click publish
