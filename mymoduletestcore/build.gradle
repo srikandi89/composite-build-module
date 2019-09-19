@@ -58,6 +58,13 @@ allprojects {
     }
 }
 
+task copyJarModuleTest1(type: Copy) {
+    from('../mymoduletest1/build/intermediates/full_jar/release/createFullJarRelease/')
+    into('libs/')
+    include('full.jar')
+    rename('full.jar', 'mymoduletest1-renamed.jar')
+}
+
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
