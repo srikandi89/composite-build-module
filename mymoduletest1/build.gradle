@@ -24,17 +24,6 @@ android {
 
 }
 
-task deleteJar(type: Delete) {
-    delete 'libs/mymoduletest1.jar'
-}
-
-task createJar(type: Copy) {
-    from('build/intermediates/bundles/release/')
-    into('libs/')
-    include('classes.jar')
-    rename('classes.jar', 'mymoduletest1.jar')
-}
-
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
