@@ -1,9 +1,19 @@
-Change gradle.properties.example to gradle.properties.
+# Nested Module Composite Build
 
-To composite-build mymoduletestcore, here are the steps:
-1. Open gradle tab at right side android studio, mymoduletest1 > tasks > other > createFullJarRelease.
-2. Copy generated jar from mymoduletest1 > build > intermediates > full_jar > release > yourModuleName.jar into mymoduletestcore/libs
-3. From gradle section, go to mymoduletestcore > tasks > build
-4. Double click clean
-5. Double click build
-6. Go to publishing section and then double click publish
+[![N|Solid](https://cldup.com/dTxpPi9lDf.thumb.png)](https://nodesource.com/products/nsolid)
+
+[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
+
+This is the android project which contain multiple nested modules, and gradle settings to wrap the whole things as one publishable package.
+
+# Step To Do
+
+  - Open gradle tab at right side android studio, mymoduletest1 > tasks > other > createFullJarRelease
+  - Copy generated jar from mymoduletest1 > build > intermediates > full_jar > release > yourModuleName.jar into mymoduletestcore/libs
+  - From gradle section, go to mymoduletestcore > tasks > build
+  - Double click clean
+  - Double click build
+  - Go to publishing section and then double click publish
+
+
+
